@@ -11,7 +11,7 @@ This is the solution for the full-stack web dev course @CoderSchoolVn
 
 This include all common features of a Social Platform.
 
-### Authentication and managing account
+### Authentication and managing account (UserFlow)
 
 - User can create account with email and password.
 - User can login with email and password.
@@ -21,7 +21,7 @@ This include all common features of a Social Platform.
 - Owner can update own account profile.
 - Owner can deactivate own account.
 
-### CRUD post with friend only access
+### CRUD post with friend only access (PostFlow)
 
 - Authenticated user can make a post (POST a post).
 - Authenticated user can see list of posts that belong to self and his/her friends.
@@ -29,7 +29,7 @@ This include all common features of a Social Platform.
 - Authenticated user can delete post by post's id.
 - Friends can see list of friend's post.
 
-### CRUD comment and reaction for friend's post
+### CRUD comment and reaction for friend's post (InterationFlow)
 
 - Friends can make comment (POST a comment) to other friend's post.
 - Author of Comment can delete that comment.
@@ -37,7 +37,7 @@ This include all common features of a Social Platform.
 - Authenticated user can see list of all comment belong to self and friend's post.
 - Friend can react to each other's post.
 
-### Managing friend
+### Managing friend (FriendFlow)
 
 - Authenticated user can accept or reject a friend request.
 - Authenticated user can see a list of all request received.
@@ -48,8 +48,8 @@ This include all common features of a Social Platform.
 
 ## Production API:
 
-- [Doc] (https://app.swaggerhub.com/apis-docs/dhminh1024/CoderComm/1.0.0#/Post)
+- [Doc](https://app.swaggerhub.com/apis-docs/dhminh1024/CoderComm/1.0.0#/Reaction/createReaction)
 
-- [App Demo] (https://codercomm-dot-cs-platform-306304.et.r.appspot.com/login)
+- [App demo](https://codercomm-dot-cs-platform-306304.et.r.appspot.com/)
 
 @copyright by CoderSchool.
