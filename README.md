@@ -46,6 +46,34 @@ This include all common features of a Social Platform.
 - Authenticated user can see list of friend.
 - Friend can unfriend.
 
+## Project set up:
+
+1. Generate express boilder plate
+
+```console
+npx express-generator --no-view
+npm install
+```
+
+2. Install project dependencies
+
+```console
+npm i nodemon cors bcryptjs dotenv
+npm i jsonwebtoken mongoose
+
+```
+
+3. Add dev script
+
+```json
+{
+  "script":{
+    ...
+    "dev": "nodemon ./bin/www"
+  }
+}
+```
+
 ## Production API:
 
 - [Doc](https://app.swaggerhub.com/apis-docs/dhminh1024/CoderComm/1.0.0#/Reaction/createReaction)
