@@ -41,13 +41,13 @@ postController.deleteOwnPost = catchAsync(async (req, res, next) => {
   const { postId } = req.params;
   let post = await Post.findOne({ _id: postId, isDeleted: false });
   if (!post) {
-    throw new AppError(404, "Post not found", "Update Post error");
+    throw new AppError(404, "Post not found", "Delete Post error");
   }
   if (!post.author.equals(currentUserId)) {
     throw new AppError(
       401,
-      "Unauthorized edit other's post",
-      "Update Post error"
+      "Unauthorized delete other's post",
+      "Delete Post error"
     );
   }
   post.isDeleted = true;
